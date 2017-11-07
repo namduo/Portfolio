@@ -1,0 +1,53 @@
+.contact-full {
+	background: $secondary-color;
+	color: white;
+	height: auto;
+	padding-bottom: 5vh;
+
+	h3 {
+		color: $primary-color;
+	}
+}
+
+label {
+	display: block;
+	font-size: 0.9em;
+	font-weight: lighter;
+	margin: 1em 0 1em 0;
+
+	&:nth-child(1) {
+		margin-top: 2em;;
+	}
+}
+
+input {
+	padding: 5px 5px 5px 0px;
+	border: none;
+	border-bottom: 2px solid rgba(255, 255, 255, .2);
+	background: none;
+	width: 95%;
+	// color: rgba(255, 255, 255, .7);
+	color: $primary-color;
+	font-weight: lighter;
+}
+
+textarea {
+	padding: 5px 5px 5px 0px;
+	width: 95%;
+	height: 15vh;
+	background: none;
+	border: none;
+	border-bottom: 2px solid rgba(255, 255, 255, .2);
+	color: $primary-color;
+	font-weight: lighter;
+	resize: none;
+	box-sizing: border-box;
+}
+
+
+// input[type=text]:focus, textarea:focus {
+//   box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+//   padding: 3px 0px 3px 3px;
+//   margin: 5px 1px 3px 0px;
+//   border: 1px solid rgba(81, 203, 238, 1);
+// }

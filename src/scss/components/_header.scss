@@ -1,3 +1,14 @@
 .portfolio {
-	padding-top: 60px;
+	padding-top: 60px;;
 }
+
+.portfolio-full {
+	padding-top: 60px;
+	background: url('/img/header-bg.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.portfolio-fixed {}

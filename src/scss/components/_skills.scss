@@ -1,0 +1,19 @@
+.skills-full {
+	background: $secondary-color;
+	color: white;
+}
+
+.skills-fixed {
+
+	h3 {
+		color: $primary-color;
+	}
+}
+
+.skills-logo {
+
+	& > img {
+		height: 45px;
+		width: 45px;
+	}
+}
