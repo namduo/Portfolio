@@ -1,3 +1,2 @@
-const css = require('../scss/main.scss');
-
-console.log('hello from ./src/js/index.js');
+var css = require('../scss/main.scss');
+var functions = require('./components/functions.js');

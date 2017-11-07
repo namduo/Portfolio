@@ -1,0 +1,96 @@
+.wrapper-full-nav {
+	background: $secondary-color;
+	position: fixed;
+	width: 100%;
+	padding: 1.3em;
+}
+
+.wrapper-fixed-nav {
+	position: relative;
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+nav {
+	position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+	ul {
+		margin: 0;
+		padding: 0;
+
+	}
+
+	ul li {
+		list-style: none;
+		display: inline-block;
+		padding-left: 1.2em;
+
+		&:nth-child(1) {
+			padding-left: 0;
+		}
+	}
+
+	ul li a {
+		text-decoration: none;
+		color: white;
+
+		&:hover {
+			color: $primary-color;
+			transition: 0.2s;
+		}
+	}
+}
+
+// BURGER NAV
+
+.menu-toggle {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	top: -0.7em;
+	z-index: 1;
+	cursor: pointer;
+	transition: .5s;
+}
+
+.menu-toggle span {
+	position: absolute;
+	display: block;
+	height: 0.2em;
+	background: #fff;
+	width: 2.5em;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	transition: .5s;
+}
+
+.menu-toggle span:nth-child(1) {
+	top: 30%;
+}
+.menu-toggle span:nth-child(3) {
+	top: 70%;
+}
+
+// BURGER NAV - ACTIVE
+.menu-toggle.active span:nth-child(1) {
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) rotate(45deg);
+	background: #00C8FF;
+}
+
+.menu-toggle.active span:nth-child(2) {
+	opacity: 0;
+	background: #00C8FF;
+}
+
+.menu-toggle.active span:nth-child(3) {
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) rotate(-45deg);
+	background: #00C8FF;
+}
